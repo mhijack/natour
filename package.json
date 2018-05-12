@@ -1,0 +1,23 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhijack/porfolio.git"
+  },
+  "author": "Jianyuan Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhijack/porfolio/issues"
+  },
+  "homepage": "https://github.com/mhijack/porfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "dependencies": {}
+}
