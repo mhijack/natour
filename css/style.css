@@ -230,7 +230,9 @@ body {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: .2rem;
-    position: absolute; }
+    position: absolute;
+    transition: all 0.2s;
+    outline-offset: 2rem; }
     .composition__photo--p1 {
       top: -2rem;
       left: 0; }
@@ -239,7 +241,13 @@ body {
       right: 0; }
     .composition__photo--p3 {
       top: 10rem;
-      left: 12rem; }
+      left: 20%; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.3) translateY(-0.5rem);
+      z-index: 100; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); }
 
 .section-about {
   background-color: #f7f7f7;
