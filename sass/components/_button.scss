@@ -8,6 +8,7 @@
     padding: 1rem 4rem;
     border-radius: 10rem;
     font-size: $default-font-size;
+    transition: all 0.2s;
   }
   &--white {
     background-color: $color-white;
@@ -60,7 +61,7 @@
     display: inline-block;
     text-decoration: none;
     border-bottom: 2px solid $color-primary;
-    padding: .5rem 1rem;
+    padding: .5rem 0;
     transition: all .2s;
   }
   &:hover {
@@ -68,6 +69,7 @@
     color: $color-white;
     box-shadow: 0 1rem 2rem rgba($color-black, .15);
     transform: translateY(-.2rem);
+    padding: .5rem 1rem;
   }
   &:active {
     transform: translateY(0);
