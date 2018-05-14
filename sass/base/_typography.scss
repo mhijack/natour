@@ -11,7 +11,8 @@ body {
   color: $color-white;
   text-transform: uppercase;
 
-  backface-visibility: hidden; /* fix transform animation shaky at the end */
+  -webkit-backface-visibility: hidden; /* fix transform animation shaky at the end */
+  backface-visibility: hidden;
   margin-bottom: 6rem;
 
   &--main {
