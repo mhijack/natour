@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/icon.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -12,6 +12,25 @@
         <title>Front End Developer | Jianyuan Chen</title>
     </head>
     <body>
+        <div class="navigation">
+            <input id="navi-toggle" type="checkbox" class="navigation__checkbox">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">
+                &nbsp;
+            </div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">About natours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <header class="header">
             <div class="header__logo-box">
                 <img class="header__logo" src="img/logo-white.png" alt="Logo">
@@ -147,7 +166,7 @@
                                             $297
                                         </p>
                                     </div>
-                                    <a href="#" class="btn btn--white">
+                                    <a href="#popup" class="btn btn--white">
                                         Book now
                                     </a>
                                 </div>
@@ -184,7 +203,7 @@
                                             $597
                                         </p>
                                     </div>
-                                    <a href="#" class="btn btn--white">
+                                    <a href="#popup" class="btn btn--white">
                                         Book now
                                     </a>
                                 </div>
@@ -221,7 +240,7 @@
                                             $897
                                         </p>
                                     </div>
-                                    <a href="#" class="btn btn--white">
+                                    <a href="#popup" class="btn btn--white">
                                         Book now
                                     </a>
                                 </div>
@@ -357,6 +376,24 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img class="popup__img" src="img/nat-8.jpg" alt="Tour photo">
+                    <img class="popup__img" src="img/nat-9.jpg" alt="Tour photo">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit tempora, assumenda, ea, natus alias autem laboriosam quae incidunt ratione cum. Voluptates et voluptas officia, eum accusantium sed. Aliquam, est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi id provident esse rem. Quidem voluptates nesciunt aperiam! Blanditiis, eaque. Eum recusandae ut itaque quaerat officiis tempora facere molestias consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit placeat, repellat temporibus sunt delectus quaerat non fugiat asperiores nisi quo eius maxime autem modi repellendus, necessitatibus ad saepe odio Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas corrupti quasi neque beatae animi quisquam nobis unde sint tempore ab architecto commodi voluptatibus obcaecati voluptates, quo doloribus provident reiciendis fugit.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
         <!-- <section class="grid-test">
             <div class="row">
                 <div class="col-1-of-2">
